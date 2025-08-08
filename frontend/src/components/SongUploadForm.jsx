@@ -30,7 +30,7 @@ export default function SongUploadForm({ onSongAdded }) {
       formData.append("mood", mood);
       formData.append("audio", audio);
 
-      const res = await axios.post("http://localhost:3000/songs", formData, {
+      const res = await axios.post("https://ai-moodypalyer.onrender.com/songs", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
